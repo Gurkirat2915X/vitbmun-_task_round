@@ -171,7 +171,7 @@ header {
 }
 
 /* WHAT WE DO */
-#what{
+.content{
   /* margin: 5rem; */
   width: 60%;
   padding: 2rem;
@@ -188,17 +188,17 @@ header {
   margin: 5rem  auto;
 
 }
-#what h1 {
+.content h1 {
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
 }
-#what p {
+.content p {
   font-size: 1.2rem;
   font-weight: 500;
   padding: 1rem;
 }
-#what img {
+.content img {
   height: 10rem;
   border-radius: 50%;
   object-fit: cover;
@@ -255,14 +255,14 @@ header {
     left: 10%;
     width: 80%;
   }
-  #what {
+  .content {
     width: 80%;
 
   }
-  #what h1 {
+  .content h1 {
     font-size: 1.5rem;
   }
-  #what p {
+  .content p {
     font-size: 0.9rem;
   }
   
@@ -280,13 +280,13 @@ header {
     width: 90%;
     height: 80%;
   }
-  #what {
+  .content {
     width: 90%;
   }
-  #what h1 {
+  .content h1 {
     font-size: 1.2rem;
   }
-  #what p {
+  .content p {
     font-size: 0.8rem;
   }
 }
