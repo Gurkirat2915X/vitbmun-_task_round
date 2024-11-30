@@ -1,7 +1,7 @@
 # vitbmun-\_task_round
 
 ## Project published at : https://gurkirat2915x.github.io/vitbmun_task_round/
-**note:** Please allow the website to load before evaluation.
+**Note:** Please allow the website to load before evaluation.
 
 ## Table of Contents
 
