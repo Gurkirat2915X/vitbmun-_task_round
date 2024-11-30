@@ -305,10 +305,7 @@ header {
   transition: 0.4s ease;
 }
 
-.card-list .card-link .card-button:hover{
-  background: #fff;
-  color: #fff;
-}
+
 
 .card-wrapper{
   display: block;
@@ -508,5 +505,8 @@ footer .wave#wave4{
   }
   .content p {
     font-size: 0.8rem;
+  }
+  .card-wrapper .swipe-slide-button{
+    display: none;
   }
 }
