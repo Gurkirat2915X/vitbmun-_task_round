@@ -74,7 +74,7 @@ header .logo {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.action_btn:hover, .dropdown_menu ul li .action_btn:hover {
+.action_btn:hover, .dropdown_menu ul li .action_btn:hover  {
   scale:1.05;
   color: #0c9ef2;
 }
@@ -120,6 +120,110 @@ header .logo {
   display: flex;
   justify-content: center;
 }
+
+ 
+
+header {
+  background-image: url("resources/image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  /* background-color: red; */
+ 
+
+}
+.banner{
+  /* position: relative; */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+  text-align: center;
+  width: 60%;
+  /* margin: 0 auto; */
+  height: 70%;
+  /* max-height: ; */
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+.banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.banner p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.banner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* WHAT WE DO */
+#what{
+  /* margin: 5rem; */
+  width: 60%;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  /* position: relative;
+  top: 5rem;
+  left: 20%; */
+  margin: 5rem  auto;
+
+}
+#what h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+#what p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+#what img {
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* animations */
+.auto_rotate{
+  animation: auto_rotate_animation;
+  animation-timeline: view();
+}
+
+@keyframes auto_rotate_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
 /* RESPONSIVE DESOGN */
 @media(max-width: 992px){
   .navbar .links,
@@ -132,6 +236,22 @@ header .logo {
   .dropdown_menu {
     display: block;
   }
+  .banner {
+    top: 15%;
+    left: 10%;
+    width: 80%;
+  }
+  #what {
+    width: 80%;
+
+  }
+  #what h1 {
+    font-size: 1.5rem;
+  }
+  #what p {
+    font-size: 0.9rem;
+  }
+  
 }
 
 @media(max-width: 576px){
@@ -139,4 +259,20 @@ header .logo {
     top: 5rem;
     left: 2rem;
     width:  unset;
-  }}
+  }
+  .banner {
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+  }
+  #what {
+    width: 90%;
+  }
+  #what h1 {
+    font-size: 1.2rem;
+  }
+  #what p {
+    font-size: 0.8rem;
+  }
+}
