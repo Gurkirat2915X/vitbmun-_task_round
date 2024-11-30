@@ -1,4 +1,4 @@
-# vitbmun-\_task_round
+# vitbmun_task_round
 
 ## Project published at : https://gurkirat2915x.github.io/vitbmun_task_round/
 **Note:** Please allow the website to load before evaluation.
