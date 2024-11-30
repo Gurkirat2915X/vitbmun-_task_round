@@ -2,6 +2,7 @@
 
 ## Project published at : https://gurkirat2915x.github.io/vitbmun_task_round/
 **Note:** Please allow the website to load before evaluation.
+## Youtube Link for preview: https://youtu.be/sQp3JN8TzjI
 
 ## Table of Contents
 
