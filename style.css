@@ -1,3 +1,10 @@
+/*
+This is the css file for the website.
+The website is designed using css and the Parkinsans font.
+The website is designed to be responsive for all devices.
+The website contains the header, banner, content, card list, and footer sections.
+The website also contains the wave animation for the footer.
+*/
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +26,17 @@ a {
   font-size: 1.2rem;
   transition: all 0.3s ease;
 }
-.navbar .links a:hover, .dropdown_menu ul li a:hover {
+.navbar .links a:hover,
+.dropdown_menu ul li a:hover {
   color: blue;
   font-size: 1.5rem;
 }
 /* HEADER */
+/*
+This is the header section of the website.
+The header contains the logo and the menu links for the website.
+The header is designed using css and the Parkinsans font.
+*/
 header {
   position: relative;
   padding: 1rem 2rem;
@@ -37,22 +50,18 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.navbar .logo a{
+.navbar .logo a {
   font-family: "Parkinsans", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
- 
 }
 
 .navbar .links {
   display: flex;
   gap: 2rem;
-
-
 }
 .navbar .toggle_btn {
   color: #fff;
@@ -68,43 +77,46 @@ header .logo {
   border: none;
   outline: none;
   border-radius: 20px;
-  /* font-size: 0.8rem; */
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.action_btn:hover, .dropdown_menu ul li .action_btn:hover  {
-  scale:1.05;
+.action_btn:hover,
+.dropdown_menu ul li .action_btn:hover {
+  scale: 1.05;
   color: #0c9ef2;
 }
 
 .action_btn:active {
-  scale:1.1;
-  /* color: black; */
+  scale: 1.1;
 }
 /* DROPDOWN MENU */
-.dropdown_menu{
+/*
+This is the dropdown menu section of the website.
+The dropdown menu contains the menu links for the website.
+This dropdown menu is responsive and is designed using css and javascript.
+*/
+.dropdown_menu {
   display: none;
   position: absolute;
   right: 2rem;
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   border-radius: 10px;
-  overflow: hidden; 
+  overflow: hidden;
   transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
 }
 
-.dropdown_menu.active{
+.dropdown_menu.active {
   height: 290px;
 }
 
 .dropdown_menu ul li {
-  list-style-type:none;
+  list-style-type: none;
   font-family: "Parkinsans", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
@@ -114,13 +126,11 @@ header .logo {
   align-items: center;
   justify-content: center;
 }
-.dropdown_menu .action_btn{
+.dropdown_menu .action_btn {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
- 
 
 header {
   background-image: url("resources/image.png");
@@ -129,12 +139,8 @@ header {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  /* background-color: red; */
- 
-
 }
-.banner{
-  /* position: relative; */
+.banner {
   position: absolute;
   top: 20%;
   left: 20%;
@@ -147,10 +153,10 @@ header {
   color: #fff;
   text-align: center;
   width: 60%;
-  /* margin: 0 auto; */
+
   height: 70%;
-  /* max-height: ; */
-  background: rgba(255,255,255,0.1);
+
+  background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 20px;
@@ -170,17 +176,20 @@ header {
   object-fit: cover;
 }
 
-/* WHAT WE DO */
-.content{
-  /* margin: 5rem; */
+/* CONTENT */
+/* 
+This is the what we do section of the website.
+The what we do section contains the content website.
+The content is designed using css and the auto_rotate and auto_show animations.
+*/
+.content {
   width: 60%;
   padding: 2rem;
   color: #fff;
   text-align: center;
   background-color: rgb(18, 132, 255);
   border-radius: 20px;
-  margin: 5rem  auto;
-
+  margin: 5rem auto;
 }
 .content h1 {
   font-size: 2rem;
@@ -199,7 +208,12 @@ header {
 }
 
 /* animations */
-.auto_rotate{
+/*
+This is the css animations for the auto_rotate and auto_show animations.
+The auto_rotate animation rotates the element 360 degrees.
+The auto_show animation shows the element with a scale and translateY animation. 
+*/
+.auto_rotate {
   animation: auto_rotate_animation;
   animation-timeline: view();
 }
@@ -213,7 +227,7 @@ header {
   }
 }
 
-.auto_show{
+.auto_show {
   animation: auto_show_animation both;
   animation-timeline: view(70% 5%);
 }
@@ -228,19 +242,17 @@ header {
   }
 }
 
-
-
-
-
-
 /* CARD_LIST */
+/* 
+This is the card list section of the website.
+The card list contains the cards with the information about the community.
+The cards are designed using css and the swiper js library.
+*/
 
-
-.card-list .card-item
-{
+.card-list .card-item {
   list-style: none;
 }
-.card-list .card-item .card-link{
+.card-list .card-item .card-link {
   -webkit-user-select: none;
   user-select: none;
   display: block;
@@ -254,16 +266,13 @@ header {
   max-width: 450px;
   max-height: 450px;
   transition: 0.7s ease;
-  ;
-
 }
-.card-list .card-item .card-link:hover{
+.card-list .card-item .card-link:hover {
   transform: translateY(-20px);
-  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
- 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-list .card-link .card-image{
+.card-list .card-link .card-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -272,27 +281,26 @@ header {
   object-fit: cover;
   border-radius: 10px;
   background-color: #fff;
-  
 }
 
-.card-list .card-link .badge{
+.card-list .card-link .badge {
   color: #5372f0;
   background: #fff;
   margin: 16px 0 18px;
   padding: 6px 12px;
   font-size: 0.95rem;
   font-weight: 500;
-  width : fit-content;
+  width: fit-content;
   border-radius: 50px;
 }
 
-.card-list .card-link .card-title{
+.card-list .card-link .card-title {
   font-size: 0.9rem;
   color: #fff;
   font-weight: 600;
 }
 
-.card-list .card-link .card-button{
+.card-list .card-link .card-button {
   height: 35px;
   width: 35px;
   color: #fff;
@@ -300,14 +308,12 @@ header {
   margin: 30px 0 5px;
   background: none;
   cursor: pointer;
-  border:  2px solid #fff;
+  border: 2px solid #fff;
   transform: rotate(-45deg);
   transition: 0.4s ease;
 }
 
-
-
-.card-wrapper{
+.card-wrapper {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -317,29 +323,33 @@ header {
   overflow: hidden;
 }
 
-.card-wrapper .swiper-pagination-bullet{
- height: 13px;
- width: 13px;
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
   opacity: 0.5;
   background: #fff;
 }
-.card-wrapper .swiper-pagination-bullet-active{
+.card-wrapper .swiper-pagination-bullet-active {
   opacity: 1;
- }
-
-#community{
-
-  color: #fff;
-  text-align: center;
-  font-size: 2rem;  
 }
 
-.card-wrapper .swipe-slide-button{
+#community {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-wrapper .swipe-slide-button {
   color: #fff;
 }
 /* FOOTER */
+/*
+This is the footer section of the website.
+The footer contains the social media links and the menu links.
+The footer also contains the wave animation.
+*/
 
-footer{
+footer {
   position: relative;
   width: 100%;
   background: #3586ff;
@@ -350,16 +360,17 @@ footer{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
-footer .social_icons ,footer .menu{
+footer .social_icons,
+footer .menu {
   position: relative;
   display: flex;
   justify-content: center;
   align-self: center;
   margin: 10px 0;
 }
-footer .social_icons li,footer .menu li{
+footer .social_icons li,
+footer .menu li {
   list-style: none;
 }
 
@@ -371,11 +382,11 @@ footer .social_icons li a {
   transition: 0.5s ease;
 }
 
-footer .social_icons li a:hover{
+footer .social_icons li a:hover {
   transform: translateY(-10px);
 }
 
-footer .menu li a{
+footer .menu li a {
   font-size: 1.2em;
   color: #fff;
   margin: 0 10px;
@@ -386,13 +397,11 @@ footer .menu li a{
   transition: all 0.3s ease;
 }
 
-footer .menu li a:hover{
+footer .menu li a:hover {
   opacity: 1;
-  
 }
 
-footer p
-{
+footer p {
   color: #fff;
   font-size: 1.1rem;
   text-align: center;
@@ -400,63 +409,71 @@ footer p
   margin-bottom: 10px;
 }
 
-/* WAVES */
+/* FOOTER WAVES */
+/* 
+this is the wave animation for the footer.
+the wave is made using an svg file and then animated using css keyframes.
+*/
 
-footer .wave{
+footer .wave {
   position: absolute;
   top: -100px;
   left: 0;
   width: 100%;
   height: 100px;
-  background: url("resources/wave.svg") ;
+  background: url("resources/wave.svg");
   background-size: 1000px 100px;
 }
 
-footer .wave#wave1{
+footer .wave#wave1 {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
   animation: animateWave_1 4s linear infinite;
 }
-footer .wave#wave2{
+footer .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animateWave_2 4s linear infinite;
 }
-footer .wave#wave3{
+footer .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave_1 3s linear infinite;
 }
-footer .wave#wave4{
+footer .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_2 3s linear infinite;
 }
-@keyframes animateWave_1{
-  0%{
+@keyframes animateWave_1 {
+  0% {
     background-position-x: 1000px;
   }
-  100%{
+  100% {
     background-position-x: 0px;
   }
-  
 }
-@keyframes animateWave_2{
-  0%{
+@keyframes animateWave_2 {
+  0% {
     background-position-x: 0px;
   }
-  100%{
+  100% {
     background-position-x: 1000px;
   }
-  
 }
 
-/* RESPONSIVE DESGN */
-@media(max-width: 992px){
+/* RESPONSIVE DESIGN */
+/*
+This is the media query for the responsive design of the website.
+The website is designed to be responsive for all devices.
+media query triggers at 992px and 576px.
+*/
+
+@media (max-width: 992px) {
   .navbar .links,
   .navbar .action_btn {
     display: none;
@@ -474,7 +491,6 @@ footer .wave#wave4{
   }
   .content {
     width: 80%;
-
   }
   .content h1 {
     font-size: 1.5rem;
@@ -482,14 +498,13 @@ footer .wave#wave4{
   .content p {
     font-size: 0.9rem;
   }
-  
 }
 
-@media(max-width: 576px){
+@media (max-width: 576px) {
   .dropdown_menu {
     top: 5rem;
     left: 2rem;
-    width:  unset;
+    width: unset;
   }
   .banner {
     top: 10%;
@@ -506,7 +521,7 @@ footer .wave#wave4{
   .content p {
     font-size: 0.8rem;
   }
-  .card-wrapper .swipe-slide-button{
+  .card-wrapper .swipe-slide-button {
     display: none;
   }
 }
