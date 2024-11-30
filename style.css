@@ -100,7 +100,7 @@ header .logo {
 }
 
 .dropdown_menu.active{
-  height: 240px;
+  height: 290px;
 }
 
 .dropdown_menu ul li {
@@ -238,7 +238,7 @@ header {
 
 
 
-/* RESPONSIVE DESOGN */
+/* RESPONSIVE DESGN */
 @media(max-width: 992px){
   .navbar .links,
   .navbar .action_btn {
@@ -290,3 +290,86 @@ header {
     font-size: 0.8rem;
   }
 }
+/* CARD_LIST */
+
+.card-list .card-item
+{
+  list-style: none;
+}
+.card-list .card-item .card-link{
+  -webkit-user-select: none;
+  user-select: none;
+  display: block;
+  background: rgb(18, 132, 255);
+  padding: 18px;
+  border: 2px solid none;
+  border-radius: 12px;
+  text-decoration: none;
+
+  transition: 0.7s ease;
+  ;
+
+}
+.card-list .card-item .card-link:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+ 
+}
+
+.card-list .card-link .card-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #fff;
+  
+}
+
+.card-list .card-link .badge{
+  color: #5372f0;
+  background: #fff;
+  margin: 16px 0 18px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  width : fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .card-title{
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.card-list .card-link .card-button{
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border:  2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link .card-button:hover{
+  background: #fff;
+  color: #5372f0;
+}
+
+.card-wrapper{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin: 0 60 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
