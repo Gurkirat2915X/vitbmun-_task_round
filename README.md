@@ -1,6 +1,7 @@
 # vitbmun-\_task_round
 
 ## Project published at : https://gurkirat2915x.github.io/vitbmun_task_round/
+**note:** Please allow the website to load before evaluation.
 
 ## Table of Contents
 
@@ -21,8 +22,7 @@ The design and features of this website are inspired by the [VIT-B MUN website](
 - **Glass-morphic navbar:** Designed specifically for mobile and tablet users to enhance visual appeal.
 - **Fully Responsive Design:** Supports all screen sizes and types for optimal user experience.
 - **Framework-Free Animations:** Created using plain HTML, CSS, and JavaScript to demonstrate pure development skills.
-- **Wave-Animated Footer:** Adds a dynamic and modern touch to the design.
-
+- **Interactive Hover Effects:** Enhanced hover effects on the navbar, buttons, and social media icons to provide a more engaging user experience.
 ## Installation
 
 To install this project, follow these steps:

@@ -140,6 +140,10 @@ header {
   background-size: cover;
   height: 100vh;
 }
+/* BANNER */
+/*
+This is the banner section of the website.
+*/
 .banner {
   position: absolute;
   top: 20%;
